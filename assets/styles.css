@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img{
+    width: 50%;
+}
+
+.team-member2{
+    position: relative;
+    top: 50px;
+}
+
+.team-member5{
+    position: relative;
+    top: 100px;
+}
+
+.name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.role{
+    transform: rotate(90deg);
+    position: relative;
+    top: 60%;
+    left: 3%;
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title{
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+    width: 100%;
+}
+
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-right: 15%;
+}
+
+@media (max-width:540px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .role{
+        top: 40%;
+        left: 35%;
+        font-family: 'PT Serif', serif;
+    }
+    img{
+        width: 80%;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.wrapper{
+    margin: 5% 10% 0 10%;
+}
